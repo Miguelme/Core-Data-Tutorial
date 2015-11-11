@@ -13,6 +13,12 @@
 		49A86E3F1BED830B001E4FB8 /* CoreDataTutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49A86E3D1BED830B001E4FB8 /* CoreDataTutorial.xcdatamodeld */; };
 		49A86E411BED830B001E4FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A86E401BED830B001E4FB8 /* Assets.xcassets */; };
 		49A86E441BED830B001E4FB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A86E421BED830B001E4FB8 /* LaunchScreen.storyboard */; };
+		49C597F01BF03EAE001AAB1B /* PersonMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C597EA1BF03EAE001AAB1B /* PersonMO+CoreDataProperties.swift */; };
+		49C597F11BF03EAE001AAB1B /* PersonMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C597EB1BF03EAE001AAB1B /* PersonMO.swift */; };
+		49C597F21BF03EAE001AAB1B /* ChoreLogMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C597EC1BF03EAE001AAB1B /* ChoreLogMO+CoreDataProperties.swift */; };
+		49C597F31BF03EAE001AAB1B /* ChoreLogMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C597ED1BF03EAE001AAB1B /* ChoreLogMO.swift */; };
+		49C597F41BF03EAE001AAB1B /* ChoreMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C597EE1BF03EAE001AAB1B /* ChoreMO+CoreDataProperties.swift */; };
+		49C597F51BF03EAE001AAB1B /* ChoreMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C597EF1BF03EAE001AAB1B /* ChoreMO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		49A86E401BED830B001E4FB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49A86E431BED830B001E4FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49A86E451BED830B001E4FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C597EA1BF03EAE001AAB1B /* PersonMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PersonMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		49C597EB1BF03EAE001AAB1B /* PersonMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonMO.swift; sourceTree = "<group>"; };
+		49C597EC1BF03EAE001AAB1B /* ChoreLogMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChoreLogMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		49C597ED1BF03EAE001AAB1B /* ChoreLogMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoreLogMO.swift; sourceTree = "<group>"; };
+		49C597EE1BF03EAE001AAB1B /* ChoreMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChoreMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		49C597EF1BF03EAE001AAB1B /* ChoreMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoreMO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,7 @@
 		49A86E2A1BED830B001E4FB8 = {
 			isa = PBXGroup;
 			children = (
+				49C597F61BF040E3001AAB1B /* CoreDataClasses */,
 				49A86E351BED830B001E4FB8 /* CoreDataTutorial */,
 				49A86E341BED830B001E4FB8 /* Products */,
 			);
@@ -65,6 +78,19 @@
 				49A86E3D1BED830B001E4FB8 /* CoreDataTutorial.xcdatamodeld */,
 			);
 			path = CoreDataTutorial;
+			sourceTree = "<group>";
+		};
+		49C597F61BF040E3001AAB1B /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				49C597EA1BF03EAE001AAB1B /* PersonMO+CoreDataProperties.swift */,
+				49C597EB1BF03EAE001AAB1B /* PersonMO.swift */,
+				49C597EC1BF03EAE001AAB1B /* ChoreLogMO+CoreDataProperties.swift */,
+				49C597ED1BF03EAE001AAB1B /* ChoreLogMO.swift */,
+				49C597EE1BF03EAE001AAB1B /* ChoreMO+CoreDataProperties.swift */,
+				49C597EF1BF03EAE001AAB1B /* ChoreMO.swift */,
+			);
+			name = CoreDataClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +167,13 @@
 			files = (
 				49A86E391BED830B001E4FB8 /* ViewController.swift in Sources */,
 				49A86E371BED830B001E4FB8 /* AppDelegate.swift in Sources */,
+				49C597F01BF03EAE001AAB1B /* PersonMO+CoreDataProperties.swift in Sources */,
+				49C597F11BF03EAE001AAB1B /* PersonMO.swift in Sources */,
+				49C597F21BF03EAE001AAB1B /* ChoreLogMO+CoreDataProperties.swift in Sources */,
 				49A86E3F1BED830B001E4FB8 /* CoreDataTutorial.xcdatamodeld in Sources */,
+				49C597F41BF03EAE001AAB1B /* ChoreMO+CoreDataProperties.swift in Sources */,
+				49C597F31BF03EAE001AAB1B /* ChoreLogMO.swift in Sources */,
+				49C597F51BF03EAE001AAB1B /* ChoreMO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +323,7 @@
 				49A86E4A1BED830B001E4FB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 
@@ -107,5 +108,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    // MARK: - Helper Functions
+    
+    func createChoreMO() -> ChoreMO {
+        let moc = self.managedObjectContext
+        let choreMO = NSEntityDescription.insertNewObjectForEntityForName( "Chore", inManagedObjectContext: moc) as! ChoreMO
+        return choreMO
+        
+    }
+    func createPersonMO() -> PersonMO {
+        let moc = self.managedObjectContext
+        let personMO = NSEntityDescription.insertNewObjectForEntityForName( "Person", inManagedObjectContext: moc) as! PersonMO
+        return personMO
+        
+    }
+    
+    func createChoreLogMO() -> ChoreLogMO {
+        let moc = self.managedObjectContext
+        let choreLogMO = NSEntityDescription.insertNewObjectForEntityForName( "ChoreLog", inManagedObjectContext: moc) as! ChoreLogMO
+        return choreLogMO
+        
+    }
 }
 
