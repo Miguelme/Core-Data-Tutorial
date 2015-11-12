@@ -13,5 +13,8 @@ import CoreData
 class ChoreMO: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
-
+    
+    override var description : String {
+        return chore_name!
+    }
 }

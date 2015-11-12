@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgS-YP-fBo">
-                                <rect key="frame" x="117" y="66" width="87" height="30"/>
+                                <rect key="frame" x="0.0" y="66" width="87" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Add A Chore"/>
                                 <connections>
@@ -27,11 +27,68 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pbi-nx-jRz">
-                                <rect key="frame" x="-4" y="28" width="208" height="30"/>
+                                <rect key="frame" x="0.0" y="28" width="150" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="zaJ-nE-Ng6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aO-Az-8zV">
+                                <rect key="frame" x="138" y="518" width="45" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVx-h5-ty1"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5K0-OI-7Fe">
+                                <rect key="frame" x="-8" y="104" width="150" height="117"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="lhT-CW-r43"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eKc-u6-feS">
+                                <rect key="frame" x="170" y="28" width="150" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvf-yn-I0N">
+                                <rect key="frame" x="170" y="66" width="93" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Add A Person"/>
+                                <connections>
+                                    <action selector="addPersonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3x-Ex-fP8"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9d-3i-iaR">
+                                <rect key="frame" x="166" y="91" width="162" height="130"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="XDs-3F-fL1"/>
+                                </constraints>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fla-M8-aLG">
+                                <rect key="frame" x="0.0" y="229" width="320" height="120"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="nGN-gi-umU"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="469048423.90102601">
+                                    <!--2015-11-12 19:13:43 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGH-ZA-a5z">
+                                <rect key="frame" x="89" y="373" width="143" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Add Chore Log Entry"/>
+                                <connections>
+                                    <action selector="addChoreLogTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qyk-if-9qw"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUZ-4n-Mia">
                                 <rect key="frame" x="0.0" y="411" width="320" height="106"/>
                                 <animations/>
@@ -42,33 +99,43 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aO-Az-8zV">
-                                <rect key="frame" x="138" y="337" width="45" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Delete"/>
-                                <connections>
-                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVx-h5-ty1"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eKc-u6-feS" firstAttribute="leading" secondItem="pbi-nx-jRz" secondAttribute="trailing" constant="20" id="0S6-Qv-9I5"/>
                             <constraint firstAttribute="bottomMargin" secondItem="DUZ-4n-Mia" secondAttribute="bottom" constant="51" id="2nH-xl-yVu"/>
-                            <constraint firstItem="kgS-YP-fBo" firstAttribute="centerX" secondItem="DUZ-4n-Mia" secondAttribute="centerX" id="3pl-pO-yfg"/>
+                            <constraint firstItem="Hvf-yn-I0N" firstAttribute="leading" secondItem="pbi-nx-jRz" secondAttribute="trailing" constant="20" id="2uE-YE-Bdx"/>
+                            <constraint firstItem="DUZ-4n-Mia" firstAttribute="top" secondItem="yGH-ZA-a5z" secondAttribute="bottom" constant="8" id="3A1-CF-mdt"/>
+                            <constraint firstItem="5K0-OI-7Fe" firstAttribute="width" secondItem="pbi-nx-jRz" secondAttribute="width" id="3WI-QS-sGr"/>
+                            <constraint firstItem="b9d-3i-iaR" firstAttribute="top" secondItem="eKc-u6-feS" secondAttribute="bottom" constant="33" id="5mV-OC-WvH"/>
+                            <constraint firstItem="kgS-YP-fBo" firstAttribute="centerX" secondItem="8aO-Az-8zV" secondAttribute="centerX" constant="-117" id="682-v0-mAi"/>
+                            <constraint firstItem="fla-M8-aLG" firstAttribute="leading" secondItem="kgS-YP-fBo" secondAttribute="leading" id="85Y-pu-kHt"/>
                             <constraint firstItem="8aO-Az-8zV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B2L-5Y-c2t"/>
-                            <constraint firstAttribute="trailing" secondItem="DUZ-4n-Mia" secondAttribute="trailing" id="Dju-uE-LJM"/>
-                            <constraint firstItem="pbi-nx-jRz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="DuT-0Y-yK0"/>
+                            <constraint firstItem="5K0-OI-7Fe" firstAttribute="top" secondItem="kgS-YP-fBo" secondAttribute="bottom" constant="8" id="M81-Fw-H1i"/>
                             <constraint firstItem="pbi-nx-jRz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="MEt-oc-DKo"/>
+                            <constraint firstItem="Hvf-yn-I0N" firstAttribute="top" secondItem="eKc-u6-feS" secondAttribute="bottom" constant="8" id="PtF-xi-p7a"/>
+                            <constraint firstItem="5K0-OI-7Fe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="TgT-g4-3rb"/>
+                            <constraint firstItem="eKc-u6-feS" firstAttribute="trailing" secondItem="DUZ-4n-Mia" secondAttribute="trailing" id="YN9-1Y-Lea"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b9d-3i-iaR" secondAttribute="trailing" constant="-24" id="aHr-UW-zNS"/>
                             <constraint firstItem="kgS-YP-fBo" firstAttribute="top" secondItem="pbi-nx-jRz" secondAttribute="bottom" constant="8" symbolic="YES" id="axA-M8-TnW"/>
-                            <constraint firstItem="DUZ-4n-Mia" firstAttribute="top" secondItem="8aO-Az-8zV" secondAttribute="bottom" constant="44" id="bv6-TT-cII"/>
-                            <constraint firstItem="DUZ-4n-Mia" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k7a-S5-iEZ"/>
-                            <constraint firstItem="kgS-YP-fBo" firstAttribute="trailing" secondItem="pbi-nx-jRz" secondAttribute="trailing" id="lFJ-qg-XnW"/>
+                            <constraint firstItem="DUZ-4n-Mia" firstAttribute="top" secondItem="8aO-Az-8zV" secondAttribute="bottom" constant="-137" id="bv6-TT-cII"/>
+                            <constraint firstItem="yGH-ZA-a5z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oMc-3u-oYd"/>
+                            <constraint firstItem="eKc-u6-feS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="qmb-dk-Pnw"/>
+                            <constraint firstItem="eKc-u6-feS" firstAttribute="width" secondItem="pbi-nx-jRz" secondAttribute="width" id="r14-GJ-Kdo"/>
+                            <constraint firstItem="fla-M8-aLG" firstAttribute="top" secondItem="5K0-OI-7Fe" secondAttribute="bottom" constant="8" symbolic="YES" id="s28-qQ-h2e"/>
+                            <constraint firstItem="b9d-3i-iaR" firstAttribute="leading" secondItem="5K0-OI-7Fe" secondAttribute="trailing" constant="24" id="unC-Jt-lMr"/>
+                            <constraint firstItem="pbi-nx-jRz" firstAttribute="leading" secondItem="DUZ-4n-Mia" secondAttribute="leading" id="wQz-x0-flU"/>
+                            <constraint firstItem="pbi-nx-jRz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zys-nf-aXx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="choreFld" destination="pbi-nx-jRz" id="ZZ2-fV-aFk"/>
+                        <outlet property="chorePckr" destination="5K0-OI-7Fe" id="meE-EY-KhF"/>
+                        <outlet property="datePckr" destination="fla-M8-aLG" id="8M3-TH-E4N"/>
                         <outlet property="persistedDataLbl" destination="DUZ-4n-Mia" id="qdn-O6-VoD"/>
+                        <outlet property="personFld" destination="eKc-u6-feS" id="Iph-p3-8ih"/>
+                        <outlet property="personPckr" destination="b9d-3i-iaR" id="1zT-n8-6qZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

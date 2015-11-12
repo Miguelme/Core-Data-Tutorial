@@ -19,6 +19,7 @@
 		49C597F31BF03EAE001AAB1B /* ChoreLogMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C597ED1BF03EAE001AAB1B /* ChoreLogMO.swift */; };
 		49C597F41BF03EAE001AAB1B /* ChoreMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C597EE1BF03EAE001AAB1B /* ChoreMO+CoreDataProperties.swift */; };
 		49C597F51BF03EAE001AAB1B /* ChoreMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C597EF1BF03EAE001AAB1B /* ChoreMO.swift */; };
+		49DE905F1BF4439200CB29FE /* PickerViewHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DE905E1BF4439200CB29FE /* PickerViewHelperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		49C597ED1BF03EAE001AAB1B /* ChoreLogMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoreLogMO.swift; sourceTree = "<group>"; };
 		49C597EE1BF03EAE001AAB1B /* ChoreMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChoreMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		49C597EF1BF03EAE001AAB1B /* ChoreMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoreMO.swift; sourceTree = "<group>"; };
+		49DE905E1BF4439200CB29FE /* PickerViewHelperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewHelperViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				49A86E361BED830B001E4FB8 /* AppDelegate.swift */,
 				49A86E381BED830B001E4FB8 /* ViewController.swift */,
+				49DE905E1BF4439200CB29FE /* PickerViewHelperViewController.swift */,
 				49A86E3A1BED830B001E4FB8 /* Main.storyboard */,
 				49A86E401BED830B001E4FB8 /* Assets.xcassets */,
 				49A86E421BED830B001E4FB8 /* LaunchScreen.storyboard */,
@@ -172,6 +175,7 @@
 				49C597F21BF03EAE001AAB1B /* ChoreLogMO+CoreDataProperties.swift in Sources */,
 				49A86E3F1BED830B001E4FB8 /* CoreDataTutorial.xcdatamodeld in Sources */,
 				49C597F41BF03EAE001AAB1B /* ChoreMO+CoreDataProperties.swift in Sources */,
+				49DE905F1BF4439200CB29FE /* PickerViewHelperViewController.swift in Sources */,
 				49C597F31BF03EAE001AAB1B /* ChoreLogMO.swift in Sources */,
 				49C597F51BF03EAE001AAB1B /* ChoreMO.swift in Sources */,
 			);

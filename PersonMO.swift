@@ -14,4 +14,7 @@ class PersonMO: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 
+    override var description: String{
+        return person_name!
+    }
 }
